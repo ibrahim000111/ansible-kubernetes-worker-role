@@ -1,14 +1,5 @@
-1. create inventory file at root folder 
+# copy inventory file and main.yml file at root path where repo clone and run below ansible command
 
-2. create main.yml file at root folder
-
----
-
-- name: Install dockerand kubernetes master node
-  hosts: kubernetes_master
-  become: true
-  remote_user: root
-
-  roles:
-   - anible-kubernetes-role-master 
-
+ansible -i inventory -m ping master-node
+  
+ansible-playbook -i inventory main.yml
