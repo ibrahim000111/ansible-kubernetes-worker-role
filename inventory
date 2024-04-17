@@ -1,5 +1,2 @@
-[localhost]
-127.0.0.1
-
-[kubernetes_master]
-192.168.214.58
+[master-node]
+192.168.0.0
