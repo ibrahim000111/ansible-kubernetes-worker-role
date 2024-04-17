@@ -1,0 +1,17 @@
+---
+
+- name: Install dockerand kubernetes master node
+  hosts: kubernetes_master
+  become: true
+  remote_user: root
+
+  roles:
+   - ansible-kubernetes-master
+
+- name: Install dockerand kubernetes master node
+  hosts: kubernetes_worker
+  become: true
+  remote_user: root
+
+  roles:
+   - ansible-kubernetes-worker
