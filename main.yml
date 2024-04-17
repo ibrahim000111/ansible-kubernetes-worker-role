@@ -1,6 +1,6 @@
 ---
 
-- name: Install dockerand kubernetes master node
+- name: Install docker and kubernetes master node
   hosts: master-node
   become: true
   remote_user: root
