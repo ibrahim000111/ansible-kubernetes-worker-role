@@ -1,11 +1,11 @@
 ---
 
 - name: Install docker and kubernetes master node
-  hosts: master-node
+  hosts: worker-node
   become: true
   remote_user: root
 
   roles:
-   - anible-kubernetes-role-master
+   - anible-kubernetes-worker-role
 
 
